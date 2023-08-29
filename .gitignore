@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # compiled output
 /dist
 /node_modules
@@ -20,6 +21,23 @@ lerna-debug.log*
 
 # IDEs and editors
 /.idea
+=======
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+>>>>>>> e6d0eb61d9a66fda0f91d3e37a3bad7833a65263
 .project
 .classpath
 .c9/
@@ -27,9 +45,31 @@ lerna-debug.log*
 .settings/
 *.sublime-workspace
 
+<<<<<<< HEAD
 # IDE - VSCode
+=======
+# Visual Studio Code
+>>>>>>> e6d0eb61d9a66fda0f91d3e37a3bad7833a65263
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+<<<<<<< HEAD
 !.vscode/extensions.json
+=======
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+>>>>>>> e6d0eb61d9a66fda0f91d3e37a3bad7833a65263
