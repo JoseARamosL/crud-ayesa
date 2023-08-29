@@ -13,13 +13,13 @@ export class UserController {
         const user = await this.userService.createUser(createUserDTO);
 
         return res.status(HttpStatus.OK).json({
-            message: 'Created Product',
+            message: 'Created User',
             user: user
         });
     }
 
     @Get('/')
-    async getProducts(@Res() res) {
+    async getUsers(@Res() res) {
         const users = await this.userService.getUsers();
 
         return res.status(HttpStatus.OK).json({
