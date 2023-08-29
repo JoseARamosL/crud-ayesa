@@ -1,0 +1,41 @@
+<div *ngFor="let user of arrUsers" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li>
+          Id: {{ user._id }}
+        </li>
+        <li>
+          Name: {{ user.name}}
+        </li>
+        <li>
+          Last Name: {{ user.lastName}}
+        </li>
+        <li>
+          Age: {{ user.age}}
+        </li>
+        <li>
+          Description: {{ user.description}}
+        </li>
+        <li>
+          Email: {{ user.email}}
+        </li>
+        <li>
+          Password: {{ user.password}}
+        </li>
+        <li>
+          CreatedAt: {{ user.createdAt}}
+        </li>
+      </ul>
+      <button class="btn btn-danger mr-2" (click)="user._id && deleteUser(user._id)">
+        Delete
+      </button>
+      <button class="btn btn-secondary" [routerLink]="['/user/edit', user._id]">
+        Edit
+      </button>
+    </div>
+    <div class="col md-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/6326/6326055.png" class="card-img">
+    </div>
+  </div>
+</div>
